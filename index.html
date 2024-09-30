@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo4.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class = 'btn'>Home</a></li>
+                    <li><a href="#about" class = 'btn'>About</a></li>
+                    <li><a href="#projects" class = 'btn'>Project</a></li>
+                    <li><a href="#certification" class = 'btn'>Certification</a></li>
+                    <li><a href="#contact" class = 'btn'>Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>
+                    Hi I'm <span>Aryan</span> Raj <br>From India
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------About Section------------------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/22222.png" alt="">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p class="para">My name is Aryan Raj, and I hail from Samastipur district in Bihar. 
+                        I completed my schooling at Sundari Devi Saraswati Vidya Mandir Sainik School, 
+                        where I developed a strong foundation in academics and discipline. Later, I 
+                        pursued a B.Tech in Computer Science and Engineering, specializing in Machine
+                        Learning. My academic journey has equipped me with the technical skills and 
+                        knowledge to explore innovative solutions in the field of artificial intelligence
+                        and data-driven technologies.</p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desigining web/App interfaces</li>
+                            <li><span>LANGUAGES</span><br>C++ <br>Python <br>HTML <br>CSS <br>Java Script <br>SQL</li>
+                            <li><span>EXTRA</span><br>DSA <br>Photo editing <br>Vedio editing <br> Interior Designing with Autocad</li>
+                            <li><span>TOOLS</span><br>Git-hub <br> Chat-GPT <br>Linkedin</li>
+                        </ul>
+                       </div>
+
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SECONDARY EDUCATION (2017)</span><br>Sundari Devi Saraswati Vidya Mandir Sainik School <br>Samastipur (Bihar) IN <br> 10 CGPA</li>
+                            <li><span>HIGHER SECONDARY EDUCATION (2020)</span><br>Sundari Devi Saraswati Vidya Mandir Sainik School <br>Samastipur (Bihar) IN <br> 74.4%</li>
+                            <li><span>B.TECH (2024)</span><br>B.Tech in Computer Science specializing in Machine Learning<br>Lovely Professional University <br>Phagwara, (Punjab) IN <br> CGPA 6.33</li>
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------------------------------My Project-------------------------------------------------->
+
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project1"> 
+                    <h2>1.My Portfolio Website</h2>
+                    <p> 
+                     The website is designed with a clean, modern UI and optimized for performance across 
+                     all devices. This project demonstrates my expertise in front-end development, user experience 
+                     design, and website performance optimization. <br>Leveraged JavaScript for smooth transitions</p>
+                    <img src="image/projectbg1.png">
+                    <a href="#">Git-hub link</a>
+                    
+                </div>
+                <div class="project2">
+                    <h2>2.Novel Architecture of 3D-Brain tumore detection</h2>
+                    <p>Developed a novel machine learning architecture for 3D brain tumor detection, 
+                        leveraging advanced deep learning techniques on medical imaging data. The project
+                         aimed to improve the accuracy and efficiency of brain tumor diagnosis using MRI scans.</p>
+                         <img src="image/projectbg2.png">
+                    <a href="#">Git-hub link</a>
+                    
+                </div>
+                <div class="project3">
+                    <h2>3.Book Recomender System</h2>
+                    <p>Developed a robust book recommendation system that provides personalized book suggestions
+                         based on user preferences and historical data. The system utilizes both collaborative 
+                         filtering and content-based filtering techniques to enhance recommendation accuracy.</p>
+                         <img src="image/projectbg3.png">
+                    <a href="#">Git-hub link</a>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--------------------------------------------------My Certification---------------------------------------------------->
+
+    <div id="certification">
+        <div class="container">
+            <h1 class="sub-title">Certification</h1>
+            <div class="certificate-list">
+                <div class="cert1"> 
+                    <h2>1. CPP</h2>
+                    <img src="image/CPPbg.png">
+                    <a href="image/Certificate/CPP.pdf" download class="btn btn2">Download</a>
+                    
+                </div>
+                <div class="cert2">
+                    <h2>2. HTML</h2>
+                    <img src="image/HTMLbg.png">
+                    <a href="image/Certificate/HTML.pdf" download class="btn btn2">Download</a>
+                    
+                </div>
+                <div class="cert3">
+                    <h2>3. DSA</h2>
+                    <img src="image/DSAbg.png">
+                    <a href="image/Certificate/DSA.pdf" download class="btn btn2">Download</a>
+                    
+                </div>
+                <div class="cert4">
+                    <h2>3. React-JS</h2>
+                    <img src="image/Reactjsbg.png">
+                    <a href="image/Certificate/React js.pdf" download class="btn btn2">Download</a>
+                    
+                </div>
+                <div class="cert5">
+                    <h2>3. Cloud</h2>
+                    <img src="image/Cloudbg.png">
+                    <a href="image/Certificate/IBM CLOUD ESSENTIAL.pdf" download class="btn btn2">Download</a>
+                    
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+
+<!-----------------------------------------------------Contact Me-------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-left">
+                <h1 clss="sub-title">Contact</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>aryanraj2742001@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>8058255880</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/profile.php?id=100010350930684"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/AryanRa34007240"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/aryansharma805825/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aryan8058/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="image/Certificate/CV.pdf" download class="btn1">Download CV</a>
+
+            </div>
+            <div class="col-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required >
+                    <input type="email" name="Email" placeholder="Your Email" required >
+                    <textarea name="Message" rows="6" placeholder="Your massage" required ></textarea>
+                    <button type="Submit" class="btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Aryan.. made with by <i class="fa-solid fa-heart"></i> @aryansharma805825</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-550px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw2XZlUfVcyCqt8kU0tD2esmQ_4_XdiG93Kq2ayTGWCRRIg8WZrOaigWdLqC4N19GjxVQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+    
+</body>
+</html>
